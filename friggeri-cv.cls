@@ -46,17 +46,42 @@
 % Fonts %
 %%%%%%%%%
 
+% \RequirePackage[quiet]{fontspec}
+% \RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
+%
+% \newfontfamily\bodyfont[]{Helvetica Neue}
+% \newfontfamily\thinfont[]{Helvetica Neue UltraLight}
+% \newfontfamily\headingfont[]{Helvetica Neue Condensed Bold}
+%
+% \defaultfontfeatures{Mapping=tex-text}
+% \setmainfont[Mapping=tex-text, Color=textcolor]{Helvetica Neue Light}
+%
+% \setmathfont{XITS Math}
+
+%%% modified by Karol Kozioł for ShareLaTex use
 \RequirePackage[quiet]{fontspec}
 \RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
 
-\newfontfamily\bodyfont[]{Helvetica Neue}
-\newfontfamily\thinfont[]{Helvetica Neue UltraLight}
-\newfontfamily\headingfont[]{Helvetica Neue Condensed Bold}
+\newfontfamily\bodyfont
+[BoldFont=texgyreheros-bold.otf,
+ItalicFont=texgyreheros-italic.otf,
+BoldItalicFont=texgyreheros-bolditalic.otf]
+{texgyreheros-regular.otf}
+\newfontfamily\thinfont[]{Lato-Hairline.ttf}
+\newfontfamily\headingfont[]{texgyreheros-bold.otf}
 
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Mapping=tex-text, Color=textcolor]{Helvetica Neue Light}
+\setmainfont
+[Mapping=tex-text, Color=textcolor,
+BoldFont=texgyreheros-bold.otf,
+ItalicFont=texgyreheros-italic.otf,
+BoldItalicFont=texgyreheros-bolditalic.otf
+]
+{texgyreheros-regular.otf}
 
-\setmathfont{XITS Math}
+\setmathfont{texgyreheros-regular.otf}
+%%%
+
 
 %%%%%%%%%%
 % Header %
